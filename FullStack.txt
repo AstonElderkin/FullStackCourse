@@ -187,6 +187,131 @@ srcset="1x,
 	2x,
 	3x,"
 
+480w = 480px wide
+
+To display different photos depending on screens for example - Picture element
+<picture>
+	<source media="(min-width:600px)" srcset="dog-cropped.jpg">
+	<source srcset="dog.jpg">
+	<img src="..." width="480" height="360" alt=...">
+</picture>
+
+Figure provides context that the image & caption are linked. Also can be used for interactive graphics.
+<figure>
+<img src="..."...?
+<figcaption>Maggie the dog is happy.</figcaption>
+</figure>
+	
+<audio> - element used to place audio
+<audio controls src="audio.mp3></audio>
+loop, autoplay
+
+<audio controls>
+	<source = src="audio.mp3" type="audio/mpeg">
+	<source src="audio.ogg" type="audio/ogg">
+	Sorry your browser doesn't support this audio.
+</audio>
+
+<video src="...mp4" controls></video
+
+<video controls>
+	<source src="...webm" type="video/webm">
+	<source src="...mp4" type="video/mp4">
+</video>
+
+H.264 is widely used codec, not open source
+Webm
+AV1 is open source & better that H.264?
+
+closed captioning webvtt
+<track src="....vtt">
+
+<video controls>
+	<source src="...webm" type="video/webm">
+	<source src="...mp4" type="video/mp4">
+	<track src="....vtt" kind="captions label="english" srclang="en" default>
+	<p>Your device does not support this video.</p>
+</video>
+
+embed content from other website using iframes
+video on site, share, embed, copy
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6744612190239674368" allowfullscreen="" title="Embedded post" width="504" height="733" frameborder="0"></iframe>
+
+Language Attribute
+If the entire website is 1 language
+<html lang="en-GB">
+	...
+</html>
+else specify each sections language e.g. <p lang="es-MX">
+
+dir Attribute specifies the direction of text e.g. dir="rtl">
+<html lang="en-GB" dir="ltr">
+
+charset Attribute 
+Unicode utf-8
+<head>
+	<meta charset="UTF-8">
+</head>
+
+Don't use for everything, use semantic tags
+These are generic elements for content not appropriate for a semantic element
+Can use global attributes class, id, lang, aria roles
+Use as a last resort
+<div> - Block level element
+<span> - Inline element
+
+...
+<div class="box">
+<p>Line 1.</p>
+<p>Line <span lang="es" class="bilingual">2.</span>Test.</p>
+<p>Line 3.</p>
+</div>
+...
+
+Every HTML file must have:
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		...
+	</head>
+	<body>
+		...
+	</body>
+</html>
+
+Head - Metadata
+Body - Content
+
+<head>
+	<meta charset="utf-8">
+	<title>This is a title</title>
+</head>
+
+To show designed with new practices & responsive website - Metatags
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A description of this site that will show up in search engine results.">
+<meta name="application-name" content="Filament Group">
+<meta name="msapplication-TileImage" content="/images...-144x144.png">
+<meta name="theme-colour" content="#247200">
+
+Link element - used to show range of other assets we want to load
+rel attribute - tells the browser which kind of asset it is
+href attribute - URL to asset
+<link rel="manifest" href="/webappmanifest.json">
+<link href="main.css" rel="stylesheet">
+
+script element - tells browser to load a JavaScript file - goes in head or bottom of html page
+<script src="my-javascript-file.js"></script>
+
+What goes inside body:
+main - wraps around main content of the page, only used 1 time per web page.
+
+header - header section. logo, site name - navigation. can be inside an article.
+footer - footer section. links, copyright & company info.
+article - wraps around any instance of an article. blogpost, article, snippet, social media post.
+section - wraps around sections of content. flexible.
+aside - marks side content from main attraction.
+
 
 
 
