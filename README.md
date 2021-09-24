@@ -1,8 +1,8 @@
 # FullStackCourse
 Repository for code notes from LinkedIn Full Stack Developer course 
 Course covers the following topics:
-HTML - Currntly going through,
-CSS,
+HTML - Complete,
+CSS - Currently going through,
 JavaScript,
 Search techniques for web developers,
 ECMAscript 6+ (ES6+),
