@@ -1,0 +1,387 @@
+Build portfolio/CV!
+
+HTML - Hyper Text Markup Language
+
+<p>This is a paragraph.</p>
+<h1>This is a headline</h1>
+<article>This is an article</article>
+<p>This paragraph has <em>text that's emphasised</em> for effect.</p>
+
+<article>
+<h1>This is a headline.</h1>
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<p>This third paragraph has <em>text that's emphasised</em> for effect.</p>
+</article>
+
+<h1>1st level headline.</h1>
+<h2>2nd level headline.</h2>
+<h3>3rd level headline.</h3>
+<h4>4th level headline.</h4>
+<h5>5th level headline.</h5>
+<h6>6th level headline.</h6>
+
+2 reasons/ways to use italics:
+1 - To make a point/verbal emphasise. 'Favourite'. <em>
+2 - To make it stand out. Generic. Visual only italics. <i>
+<p>My <em>favourite</em> character from <i>Sesame Street</i> is Grover.</p>
+
+2 reasons/ways to use bold:
+1 - Importance, seriousness, urgency. <strong>
+2 - Generic. Visual only Bold. No meaning. <b>
+<h1><strong>Warning!</strong> Do not be late.</h1>
+<h2><strong>Chocolate and coffee</strong> and other things I crave</h2>
+
+<p>This is a paragraph of text. Let's pretend it's part of a long article, where we expect many people to quickly scan through it, and 
+<b>we want to mark certain phrases with some boldness</b>, some visual attention, so that those sentences jump out and people don't miss them. 
+Almost like having a pull-quote.</p>
+
+Ordered lists <ol> There is an order to the list, Numbered steps cnveying order of list before CSS
+<ol>
+	<li>Flour</li>
+	<li>Sugar</li>
+	<li>Baking Powder</li>
+</ol>
+
+Unordered lists <ul> - Convey meaning. Bullet points before CSS
+<ul>
+	<li>Flour</li>
+	<li>Sugar</li>
+	<li>Baking Powder</li>
+</ul>
+<ul>
+	<li>Java</li>
+	<li>Scala</li>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	<li>PHP</li>
+	<li>SQL</li>
+</ul>
+
+Definition lists - Items with descriptions. <dl>
+dt = Defition Term
+dd = Definition Description
+<dl>
+	<dt>Unordered List</dt>
+	<dd>For grouping a collection of items that do not have a numerical ordering. Their order in the list is meaningless.</dd>
+
+	<dt>Ordered List</dt>
+	<dd>For an ordered list of items, typically rendered as a numbered list. Here, the order is meaningful.</dd>
+</dl>
+
+Block quote - <blockquote> - Big block of quote text.
+Cite - <cite> - Person who said quote.
+<blockquote>
+<p>We've gone from this to this.</p>
+<cite>- Aston Elderkin</cite>
+</blockquote>
+
+<q> Stands for "quote". Inline
+<p>Jeremy Keith said, <q>You could open an HTML document from back then in a browser today.</q></p>
+
+Inline elements - <q> <strong> <b> <i> <em>
+Block-level elements - <p> <blockquote> <ul>
+
+Time - Date, time, range of time - <time>8th May 2025</time> 
+<elementname attributename=""> so ... 
+Date: YYYY-MM-DD - <time datetime="2025-05-08">8 May, 2025</time> 
+Time: hh-mm-ss.ddd - <time datetime="14:15:28.5">14:15:28.5</time>
+Timezone = Time: hh-mm-ss.ddd+-hh:mm - <time datetime="15:45-05:00">3:45pm in New York</time>
+
+To display code - <code>
+To display HTML - <code>&lt;H4</code> - HTML Entity
+<p>We can write <code>{color:green;}</code> in our CSS, and it will apply to anything marked up as an <code>&lt;H4</code> element.</p>
+
+Line break - <br> - No closing tag.
+Keeps formatting & spacing - <pre> - Often used aloingside <code> to show indentations in code.
+
+<p>
+They<br>
+say you took my manhood,<br>
+...<br>
+their ignorance?<br>
+</p>
+<cite>- Maya Angelou</cite>
+
+<pre>
+it's
+spring
+and
+
+	the
+
+		goat-footed
+
+balloonMan		whistles
+far
+and wee
+</pre>
+
+Subscripts - Characters that are set below the text baseline such as H2O (2 is below H & O in Science formula). - <sub>
+Superscripts - Characters that are set abover the text baseline (squared is above number in Maths equations) or a footnote. - <sup>
+<p>H<sub>2</sub>O</p>
+<p>Something that has a footnote.<sup>2</sup></p>
+
+MathML - Markup language for math - If needing to display large quantities of math.
+
+<small> - To convey something that has very little promincence.
+<small>2019 Fancy Company</small>
+
+class - Allows to target all elements with that class in our CSS or JavaScript
+<p class = "intro">This is the introduction.</p>
+
+id - Allows to target a unique element with that id in our CSS or JavaScript
+<p class ="intro" id="article-intro">This is the introduction.</p>
+
+lang="eng" - Language
+dir="ltr" - text direction, ltr=left to right.
+
+ARIA Roles - HTML attributes that provide accessible information about that specific element.
+Accesability tree, built in browser.
+aria-label="Hello World"
+class="grid" aria-hidden="true"
+
+Comment in HTML:
+<!-- This is a comment -->
+
+<img src="file.jpg" /> Not all tags have a closing tag, instead they may use /> within the "opening" tag. Not necessary.
+
+<>& is used in HTML so we use these entities:
+&lt; = <
+&gt; = >
+&amp; = &
+
+We also use entities for characters not on a keyboard:
+&copy; copyright
+&trade; TM
+&star; star icon
+
+&nbsp; e.g. Aston&nbsp;Elderkin this will make it so these are never seperated on different lines. Can also be used to put in artifical spacing
+
+external link - <a href="https://www.page.com">link</a>
+
+HTTP - Hypertext Transport Protocol
+HTTPS - Hypertext Transport Protocol Secure
+
+relative URL - link to page locally - specify a path to a file
+/images/logo.gif
+../images/logo.gif - go up a folder structure 
+
+<nav  role="navigation" aria-label"main menu">
+	<ul class="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="education/index.html">Education</a></li>
+	</ul>
+</nav>
+
+<img src="image.jpg" alt="black gog" width="100" height="100">
+
+gif - animated
+SVG - logos, icons, etc. - Vector
+JPG - Compressing photos 
+PNG - Images that need transparency, compression
+
+For different devices, have images in numerous sizes that are then directed to each device type appropriately
+srcset="1x,
+	2x,
+	3x,"
+
+480w = 480px wide
+
+To display different photos depending on screens for example - Picture element
+<picture>
+	<source media="(min-width:600px)" srcset="dog-cropped.jpg">
+	<source srcset="dog.jpg">
+	<img src="..." width="480" height="360" alt=...">
+</picture>
+
+Figure provides context that the image & caption are linked. Also can be used for interactive graphics.
+<figure>
+<img src="..."...?
+<figcaption>Maggie the dog is happy.</figcaption>
+</figure>
+	
+<audio> - element used to place audio
+<audio controls src="audio.mp3></audio>
+loop, autoplay
+
+<audio controls>
+	<source = src="audio.mp3" type="audio/mpeg">
+	<source src="audio.ogg" type="audio/ogg">
+	Sorry your browser doesn't support this audio.
+</audio>
+
+<video src="...mp4" controls></video
+
+<video controls>
+	<source src="...webm" type="video/webm">
+	<source src="...mp4" type="video/mp4">
+</video>
+
+H.264 is widely used codec, not open source
+Webm
+AV1 is open source & better that H.264?
+
+closed captioning webvtt
+<track src="....vtt">
+
+<video controls>
+	<source src="...webm" type="video/webm">
+	<source src="...mp4" type="video/mp4">
+	<track src="....vtt" kind="captions label="english" srclang="en" default>
+	<p>Your device does not support this video.</p>
+</video>
+
+embed content from other website using iframes
+video on site, share, embed, copy
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6744612190239674368" allowfullscreen="" title="Embedded post" width="504" height="733" frameborder="0"></iframe>
+
+Language Attribute
+If the entire website is 1 language
+<html lang="en-GB">
+	...
+</html>
+else specify each sections language e.g. <p lang="es-MX">
+
+dir Attribute specifies the direction of text e.g. dir="rtl">
+<html lang="en-GB" dir="ltr">
+
+charset Attribute 
+Unicode utf-8
+<head>
+	<meta charset="UTF-8">
+</head>
+
+Don't use for everything, use semantic tags
+These are generic elements for content not appropriate for a semantic element
+Can use global attributes class, id, lang, aria roles
+Use as a last resort
+<div> - Block level element
+<span> - Inline element
+
+...
+<div class="box">
+<p>Line 1.</p>
+<p>Line <span lang="es" class="bilingual">2.</span>Test.</p>
+<p>Line 3.</p>
+</div>
+...
+
+Every HTML file must have:
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		...
+	</head>
+	<body>
+		...
+	</body>
+</html>
+
+Head - Metadata
+Body - Content
+
+<head>
+	<meta charset="utf-8">
+	<title>This is a title</title>
+</head>
+
+To show designed with new practices & responsive website - Metatags
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A description of this site that will show up in search engine results.">
+<meta name="application-name" content="Filament Group">
+<meta name="msapplication-TileImage" content="/images...-144x144.png">
+<meta name="theme-colour" content="#247200">
+
+Link element - used to show range of other assets we want to load
+rel attribute - tells the browser which kind of asset it is
+href attribute - URL to asset
+<link rel="manifest" href="/webappmanifest.json">
+<link href="main.css" rel="stylesheet">
+
+script element - tells browser to load a JavaScript file - goes in head or bottom of html page
+<script src="my-javascript-file.js"></script>
+
+What goes inside body:
+main - wraps around main content of the page, only used 1 time per web page.
+
+header - header section. logo, site name - navigation. can be inside an article.
+footer - footer section. links, copyright & company info.
+article - wraps around any instance of an article. blogpost, article, snippet, social media post.
+section - wraps around sections of content. flexible.
+aside - marks side content from main attraction.
+
+Forms
+<!-- get is insecure & not best practice -->
+<form action="success.html" method="get">
+	<label for="name">Name</label>
+	<input name="name" id="name" type="text">
+	<label for="email">Email</label>
+	<input name="email" id="email" type-"email" required placeholder="johndoe@mail.com">
+	<br>
+	<button type="submit">Sign up</button>
+</form>
+placeholder is not submitted by form
+value - pre populate actual answer - is submitted by form.
+e.g. <input name="name" id="name" type="text" value="Jen"> if not changed would submit Jen
+
+To apply CSS - 
+<head>
+...
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+type="password">
+type="search">
+type="tel">
+type="date">
+type="color">
+type="file" accept="image/*" multiple>
+type="checkbox">
+
+<fieldset>
+	<legend>Radio buttons in a fieldset</legend>
+	<input id="thisradio" = name"radiobutton" type="radio" value="This" checked>
+	<label for="thisradio"This</label>
+	<input id="orradio" name=radiobutton" type="radio" value="or">
+	<label for="orradio">Or</label>
+</fieldset>
+
+Text area isnt input it uses its own element:
+<label for"textarea">Text Area</label>
+<textarea id="textarea" name="textarea" cols="30" rows="15"></textarea>
+
+Use html table for tabular data - Do not use for layout of web page, do use it for email - use CSS for most layout.
+I can use this for uni modules
+
+<table> - Table - Wraps the whole table - 
+<tr> - Table Row - wraps around a set of elements, defining them as the same row - colspan, rowspan, headers
+<th> - Table Header - defines a header for a column - colspan, rowspan, scope
+<td> - Table Data - Marks the actual bits of data
+
+1 table, 3 rows including headers
+<table class="styled">
+	<tr>
+		<th>Bird name</th>
+		<th>Colour</th>
+		<th>Diet</th>
+	</tr>
+	<tr>
+		<td>Americal Goldfish</td>
+		<td>yellow</td>
+		<td>mostly seeds</td>
+	</tr>
+	<tr>
+		<td>Americal catfish</td>
+		<td>blue</td>
+		<td>kelp</td>
+	</tr>
+</table>
+
+To keep learning HTML:
+MDN Web Docs - reference documentation & advice
+HTML Specification
+W3C Web content accessability guidelines - Aria & accessability
+CSS
+
