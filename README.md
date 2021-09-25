@@ -13,3 +13,5 @@ SQL,
 NoSQL,
 REST APIs,
 DevOps.
+
+Practical learning/application done on project files supplied by course, will update & maintain.
