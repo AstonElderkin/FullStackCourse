@@ -1,1 +1,45 @@
 CSS Notes
+
+External - seperate .css file - use link tag or @import.
+Can be used on numerous .html files.
+Multiple .css files can be used on 1 page (big projects).
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<head>
+	<style> @import url('/styles/layout.css'); </style>
+</head>
+
+Inline - <p style="color:red;">red paragraph</p> - Use for single change not reusable.
+
+Internal - Best for short blocks of css unique to that page
+<head>
+	<style>
+		h1 {
+			color:green;
+		}
+		h2 {
+			color:blue;
+		}
+	</style>
+</head>
+
+Retina display - trademark by apple - high pixel density screens, other manufacturers have their own versions.
+Measured in pixels per inch (PPI), or dots per inch (DPI).
+Retina displays have double the number of PPI/DPI
+To support retina displays use an image 2x the size so 600px instead of 300px for that area space
+i.e. webspace is 300px so use 600px image
+
+Project images - 
+Thumbnails - 600px width
+Background images - 1400px - 2000px width
+
+<link rel="stylesheet" href="foldername/filename.extensionname">
+<img src="foldername/filename.extensionname">
+
+Absolute paths - resources located on a server - linking to pages outide your site.
+<a href="http://website.com/blog"></a>
+
+Do not hotlink - image link to image not on your website i.e. <img src="http://notmywebsite.com/images/photo.jpg">
+
+All resources should be in same folder structure for use except for placeholders.
