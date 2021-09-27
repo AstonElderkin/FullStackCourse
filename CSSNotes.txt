@@ -191,10 +191,120 @@ dont use spaces, use a - or _
 class="class-name"
 id="id_name"
 
+Nested elements & the Document Object Model (DOM)
+DOM - represents the relationships between HTML elements.
 
+<section>
+	<h1>Heading</h1>
+	<p>Paragraph.</p>
+	<ul>
+		<li>List item</li>
+		<li>List item</li>
+		<li>List item</li>
+	</ul>
+</section>
 
+Section = parent of h1, p & ul
+h1, p & ul = siblings
+li = children of ul
+li = descendant of section
 
+Descendant selectors - selects only elements nested within another specified element e.g.
+Can be done with class & id
+.container p {
+	...
+}
 
+section p {
+	...
+}
+
+<section>
+	<p>This is affected.</p>
+</section>
+<p>This is not affected.</p>
+
+section p a {
+	...
+}
+
+<section>
+	<p>There's a <ahref="#">Link. This link is affected.</a> inside this paragraph</p>
+	<p>This is not affected.</p>
+	<a href="#>Link. This link is not affected.</a>
+</section>
+<a href="#">Link</a>
+
+ctrl + / removes comment marks for that line in ide.
+
+Grouping selectors
+h1, h2 {
+	...
+}
+h1, h2, .class, #id {
+	...
+}
+
+when using nested expand the grouping fully so:
+section h1, section h2 {
+	...
+}
+because:
+section h1, h2 {
+	...
+}
+=
+section h1 {}
+h2 {}
+
+Inheritance - CSS styles can be inherited from ancestor to descendant elements.
+body {
+	color: #222;
+}
+Anything in body such as h1 therefor have color: #222;
+
+Some properties cant be inheritied such as background-color
+
+Specificity determines how browser decide which CSS rule takes precedence.
+p {
+	color: red;
+}
+.example {
+	color: blue;
+}
+<p class="example">Red or blue?</p>
+
+Order:
+1.Universal (*)
+2.Type (p)
+3.Class (.example)
+4.Id (#example) - Highest priority
+
+Cascade - In Cascading Stle Sheets (CSS) refer to how style rules are applied based on specificity & source order.
+Style sheets are red top to bottom. Declaration loaded last will take precedence if numerous styles are applied to element.
+Also applies to declarations in same block.
+p {
+	font-size: 12px;
+}
+/* This will take precedence */
+p {
+	font-size: 16px;
+}
+
+p {
+	color: black;
+	padding: 20px;
+	font-size: 12px;
+	font-size: 16px; /*This wille take precedence */
+}
+
+The !important keyword overides source order & specificity.
+p {
+	font-size: 12px!important; /*This style will take precedence */
+}
+.example {
+	font-size: 16px;
+}
 
 
 
