@@ -1,7 +1,10 @@
-Build portfolio/CV!
+<!--This is a comment. Comments are not displayed in the browser-->
+<!--
+-->
+<!--Build portfolio/CV!
 
 HTML - Hyper Text Markup Language
-
+-->
 <p>This is a paragraph.</p>
 <h1>This is a headline</h1>
 <article>This is an article</article>
@@ -21,6 +24,7 @@ HTML - Hyper Text Markup Language
 <h5>5th level headline.</h5>
 <h6>6th level headline.</h6>
 
+<!--
 2 reasons/ways to use italics:
 1 - To make a point/verbal emphasise. 'Favourite'. <em>
 2 - To make it stand out. Generic. Visual only italics. <i>
@@ -29,6 +33,7 @@ HTML - Hyper Text Markup Language
 2 reasons/ways to use bold:
 1 - Importance, seriousness, urgency. <strong>
 2 - Generic. Visual only Bold. No meaning. <b>
+-->
 <h1><strong>Warning!</strong> Do not be late.</h1>
 <h2><strong>Chocolate and coffee</strong> and other things I crave</h2>
 
@@ -36,14 +41,14 @@ HTML - Hyper Text Markup Language
 <b>we want to mark certain phrases with some boldness</b>, some visual attention, so that those sentences jump out and people don't miss them. 
 Almost like having a pull-quote.</p>
 
-Ordered lists <ol> There is an order to the list, Numbered steps cnveying order of list before CSS
+<!--Ordered lists <ol> There is an order to the list, Numbered steps cnveying order of list before CSS-->
 <ol>
 	<li>Flour</li>
 	<li>Sugar</li>
 	<li>Baking Powder</li>
 </ol>
 
-Unordered lists <ul> - Convey meaning. Bullet points before CSS
+<!--Unordered lists <ul> - Convey meaning. Bullet points before CSS-->
 <ul>
 	<li>Flour</li>
 	<li>Sugar</li>
@@ -59,9 +64,11 @@ Unordered lists <ul> - Convey meaning. Bullet points before CSS
 	<li>SQL</li>
 </ul>
 
+<!--
 Definition lists - Items with descriptions. <dl>
 dt = Defition Term
 dd = Definition Description
+-->
 <dl>
 	<dt>Unordered List</dt>
 	<dd>For grouping a collection of items that do not have a numerical ordering. Their order in the list is meaningless.</dd>
@@ -70,8 +77,10 @@ dd = Definition Description
 	<dd>For an ordered list of items, typically rendered as a numbered list. Here, the order is meaningful.</dd>
 </dl>
 
+<!--
 Block quote - <blockquote> - Big block of quote text.
 Cite - <cite> - Person who said quote.
+-->
 <blockquote>
 <p>We've gone from this to this.</p>
 <cite>- Aston Elderkin</cite>
@@ -80,6 +89,7 @@ Cite - <cite> - Person who said quote.
 <q> Stands for "quote". Inline
 <p>Jeremy Keith said, <q>You could open an HTML document from back then in a browser today.</q></p>
 
+<!--
 Inline elements - <q> <strong> <b> <i> <em>
 Block-level elements - <p> <blockquote> <ul>
 
@@ -120,6 +130,7 @@ and wee
 
 Subscripts - Characters that are set below the text baseline such as H2O (2 is below H & O in Science formula). - <sub>
 Superscripts - Characters that are set abover the text baseline (squared is above number in Maths equations) or a footnote. - <sup>
+-->
 <p>H<sub>2</sub>O</p>
 <p>Something that has a footnote.<sup>2</sup></p>
 

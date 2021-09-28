@@ -306,6 +306,65 @@ p {
 	font-size: 16px;
 }
 
+Psuedo-class selector - combined with other selector using :
+Needs user input.
+<a>no href</a>
+<a href="#">:link</a> 
+<a href="#">:visited</a> 
+<a href="#">:hover</a>
+<a href="#">:active</a>
+<a href="##">:focus</a>
+
+body {
+	font-size: 20px;
+}
+a {
+	color: red;
+}
+a:link {
+	color:green;
+}
+a:visited {
+	color: grey;
+}
+a:focus {
+	outline: 1px solid black;
+}
+a:hover {
+	background: grey;
+}
+a:active {
+	color:white;
+}
+
+If no link then will be red,
+If has a link but no intyeraction will be green
+when visited will be grey
+when focus (using keyboard tab) will have an outline
+when hover with mouse background is grey
+when active (during click/interaction) colour is white
+
+Block elements are the same height as their content & same width as their container.
+Always start on a new line.
+
+The display property - can be used to change the default behaviour of inline & block-level elements.
+
+<div>Block</div>
+<div>Block</div>
+<span>Inline</span>
+<span>Inline</span>
+Output - :
+Block
+Block
+Inline Inline
+
+Adding dsiplay to inline elements can make them look like blocks.
+& vice versa for blocks.
+display: block;
+display: inline;
+
+display: inline-block; This will use the height & width like a block but put them side by side like an inline element.
+
 
 
 
