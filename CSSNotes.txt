@@ -365,7 +365,136 @@ display: inline;
 
 display: inline-block; This will use the height & width like a block but put them side by side like an inline element.
 
+The box model
+Margin -> Border -> Padding -> Content
 
+Properties:
+Width
+Height
+Padding - Space in element between border
+Border - Between padding & margin
+Margin - Space outside of element
+
+use length & percentage
+.container {
+	width: 100px;
+}
+.inside-container {
+	width: 50%; /* 500px */
+}
+
+Relative <length> unit
+em = Represents inherited font-size of element
+rem = represents the font-size of the root element
+
+1vw = 1% of the width of the viewport
+1vh = 1% of the height of the viewport
+vmin: Equal to the smaller of vw & vh
+vmax: Equal to the larger of vw & vh
+
+The width & height properties change the size of the content box. Inline elements require the display property.
+/* Block element */
+div {
+	width: 100px;
+	height: 100px;
+}
+/* in-line element */
+span {
+	width: 100px;
+	height: 100px;
+	display: block;
+	/* or 
+	/* display: inline-block; */
+}
+
+Padding add/removes space inside of the element but around the content box.
+/* longhand */
+padding-top: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+padding-left: 2px;
+
+/* shorthand */
+padding: 2px 2px 2px 2px; /* top right bottom left */
+
+Shorthand can use 1-4 values
+padding: 2px; /* Same on all sides */
+padding: 2px 10px; /* top & bottom, right & left */
+padding: 2px 10px 5px; /* top, right & left, bottom */
+padding: 2px 10px 5px 2px; /*top, right, bottom, left */
+
+You can also mix unit types
+padding: 10px 2%; /* top & bottom, right & left */
+
+All values must be positive for padding, setting to 0 removes the padding.
+
+Margin adds/removes space around the element.
+Can be used with negatives.
+Can be used with auto
+
+/* longhand */
+margin-top: 2px;
+margin-right: 2px;
+margin-bottom: 2px;
+margin-left: 2px;
+
+/* shorthand */
+margin: 2px 2px 2px 2px; /* top right bottom left */
+margin: 2px 10px 5px; /* top, right & left, bottom */
+margin: 2px 10px; /* top & bottom, right & left */
+margin: 2px; /* same on all sides */
+
+The border properrty displays a border between the margin & padding.
+/* longhand */
+border-width: 2px;
+border-style: solid;
+border-color: red;
+
+/* shorthand */
+border: 2px solid red; /* width, style, color */
+
+border-width: 10px;
+	thin;
+	medium;
+	thick;
+
+border-color: blue;
+	#000000;
+
+border-style: none;
+	hidden;
+	dotted;
+	dashed;
+	solid;
+	double;
+	groove;
+	ridge;
+	inset;
+	outset;
+
+The top & bottom margin of elements can take up the same space - This is margin collapsing.
+i.e. bottom of h1 & top of h2 take up same space.
+Inline elements only have left-right margins.
+
+By default, block elements stack on top of each other.
+Use negative margin values to move elements outide of the stacking position - to overlap
+e.g. margin: -20px 0 0 -20px;
+
+Creating a content wrapper - Create a container for just the content.
+<section class="work">
+	<div class="content-wrap"><!-- new content wrap div -->
+		<h2>Work Experience</h2>
+		...
+	</dic><!-- Close content-wrap div -->
+</section>
+
+.content-wrap {
+	width: 950px;
+	margin: 0 auto;
+}
+.work {
+	background: blue;
+}
 
 
 
