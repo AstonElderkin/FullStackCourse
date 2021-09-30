@@ -496,6 +496,110 @@ Creating a content wrapper - Create a container for just the content.
 	background: blue;
 }
 
+Typography - arranging type for readability & to engage & communicate with the reader.
+Typeface - Set of fonts designed with common characteristics, composed of glyphs.
+Times New Roman- Commonly used for legal purposes.
+Comic sans - Casual font.
 
+Script - Handwriting - Small - elegant - wedding invitations - headlines - decorative details
+Decorative - Ornamental - headings - decorative details
+Monospace - Each character uses same amount of horizontal space - same width - displaying code
+Serif - small decorative lines at top or bottom of character - traditional & formal
+Sans-Serif - no small decorative lines at top or bottom of character - contempory & modern
+
+To set the type face - font-family
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+Generic font-family names:
+serif (serif fonts)
+sans-serif (sans-serif fonts)
+cursive (script or decorative fonts)
+fantasy (decorative fonts)
+monospace (monospace fonts)
+
+Web-safe fonts - are commonly pre-installed on the majority of computers/devices (e.g. Arial, Times New Roman)
+Fonts may vary among OS.
+cssfontstack.com
+
+If using font-family & have a character thats not a letter or - then need to escape it:
+p {
+	font-family: Ahem!, sans-serif; /*not valid*/
+	font-family: Ahem\!, sans-serif; /*escaped, valid*/
+}
+or 
+p {
+	font-family: Ahem!, sans-serif; /*not valid*/
+	font-family: Ahem\!, sans-serif; /*escaped, valid*/
+	font-family: "Ahem!", sans-serif; /*double quoted, valid*/
+	font-family: 'Ahem!', sans-serif; /*single quoted, valid*/
+}
+
+font-family: "Gill Sans", sans-serif; /*valid & recommended */
+font-family: Gill Sans, sans-serif; /*valid*/
+
+font-weight:
+	Light
+	Regular
+	Semi-Bold
+	Bold
+	Extra-Bold
+
+font-weight: 100; /*lightest or thinnest*/
+font-weight: 200;
+...
+font-weight: 800;
+font-weight: 900; /*darkest or thickest*/
+
+100 - Thin
+200 - Extra Light (Ultra Light)
+300 - Light
+400 - Normal
+500 - Medium
+600 - Semi Bold (Demi Bold)
+700 - Bold
+800 - Extra Bold (Ultra Bold)
+900 - Black (Heavy)
+
+keywords:
+normal = 400 - also default for body text.
+bold = 700 - also the default for headings.
+
+lighter & bolder are relative to the inherited font-weight.
+
+font-style - Used to add or remove an italic style. There are 3 values: 
+italic - cursive & sloped
+oblique - sloped
+normal.
+p {
+	font-style: italic; /*Add italic style*/
+em {
+	font-style: normal; /*removes italic style*/
+}
+
+Web fonts with @font-face
+Download font files.
+Included in your project files just like other files (i.e. images).
+Declare & link to font files using @font-face in css. 
+
+@font-face {
+	font-family: "My font";
+	src: url(my-font.woff); /*relative path*/ src: url(../fonts/museo-sans.ttf);
+	src: url(http://example.com/fonts/my-font.woff);/*absolute path*/
+}
+
+url() :
+/*valid*/
+src: url(my-font.woff);
+src: url("my-font.woff");
+src: url('my-font.woff');
+src: url("my font.woff");
+src: url(my\font.woff);
+
+/*not valid */
+src: url(my font.woff);
+
+fontsquirrel.com - generate font type files.
 
 
