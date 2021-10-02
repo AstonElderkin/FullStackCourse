@@ -602,4 +602,60 @@ src: url(my font.woff);
 
 fontsquirrel.com - generate font type files.
 
+fonts.google.com
+
+font-size: px, em, rem
+Relative values are calculated based on the nearest ancestor element.
+Absolute values are fixed & not affected by ancestor elements.
+
+font-size: px - absolute - great for accuracy - use whole numbers - Browser default = 16px.
+font-size: em - relative - whole numbers or decimal - 1em = inheritied font size, if parent = 16px then 2em = 32px.
+font-size: rem - relative - only relative to the root element (<html>) - not affected by parent or ancestor elements.
+
+font shorthand property
+
+font-style
+font-size
+font-weight
+font-family
+font-variant
+line-height
+
+/* shorthand - Must include values for font-size & font-family - others are optional*/
+font: italic small-caps bold 24px/1.5 Helvetica, sans-serif;
+
+/*longhand */
+font-style: italic;
+font-variant: small-caps;
+font-weight: bold;
+font-size: 24px;
+line-height: 1.5;
+font-family: Helvetica, sans-serif;
+
+text-decoration: none; /* removes underline */
+
+/* shorthand */
+text-decoration: underline red solid;
+
+/*longhand */
+text-decoration-line: underline;
+text-decoration-color: red;
+text-decoration-style: solid;
+
+text-align can be used to align content within a block element - can add to the HTML element or its parent element
+
+line-height sets the height of the space between 2 lines of text - (px, %, ems, rems, or unitless)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
