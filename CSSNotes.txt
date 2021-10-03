@@ -646,8 +646,95 @@ text-align can be used to align content within a block element - can add to the 
 
 line-height sets the height of the space between 2 lines of text - (px, %, ems, rems, or unitless)
 
+float is mostly used for old websites -  but can be used to style specific content such as image wraps.
+img {
+	float: left;
+	margin: 15px;
+}
+
+to stop the float - make only certain areas float with image use:
+.clear {
+	clear: both; /* clears both left & right floats */
+}
+
+if there is no element to apply clear to we need to self-clear.
+Option 1: Overflow
+<div class="parent">
+	<div class="floated">...</div>
+	<div class="floated">...</dive>
+</div>
+
+.floated {
+	float: left;
+}
+.parent {
+	overflow: hidden; /* clips the extra content outside the container */
+	/*or*/
+	overflow: auto; /* adds a scroll bar if the content is overflowing */
+	/*or*/
+	overflow: scroll; /* adds a scroll bar even if content is not overflowing */
+}
 
 
+Option 2: "clearfix" Hack
+<div class="clearfix">
+	<p>floated element</p>
+	<p>floated element</p>
+</div>
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+Option 3*: display - Not currently supported in all browsers.
+<div class="parent">
+	<div>floated element</div>
+	<div>floated element</div>
+</div>
+
+.parent {
+	display: flow-root;
+}
+
+caniuse.com - shows broser support for css options
+
+box-sizing: content box 
+This means padding & margin will be outside the specified size.
+400x600 (content, padding & border is ontop of that)
+
+box-sizing: border-box
+This means padding & margin will be inside the specified size.
+400x600 (content + padding + border)
+
+/*border box fix */
+html {
+	box-sizing: boder-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+Position - Used in combination of top, right, bottom & left properties:
+Static - Not positioned.
+Relative - Relative to current position.
+Absolute - Relative to containing element.
+Fixed: Relative to the viewport.
+Sticky: Relative to containing element & viewport.
+
+.box {
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+	
+viewport & z-index 
+Elements stacked on top of one another are stacked on the z-axis
+Y = height
+X = width
+Z = Depth
 
 
 
