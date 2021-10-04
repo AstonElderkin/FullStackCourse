@@ -736,6 +736,71 @@ Y = height
 X = width
 Z = Depth
 
+Flexbox - items are aligned along a single axis - rows or columns
+Grid - items can be aligned over 2 axis - rows and columns
+
+/* parent element */
+.flex-container {
+	background: lightgray;
+	margin-bottom: 10px;
+	width: 500px;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+/* child element */
+.flex-item {
+	box-sizing: border-box;
+	border: 1px solid blue;
+	padding: 10px;
+	width: 100px;
+}
+
+<section class="flex-container">
+	<div>flex item
+		<div>not a flex item</div>
+	</div>
+	<div>flex item</div>
+	<div>flex item</div>
+	<div>flex item</div>
+</section>
+
+.container {
+	display: flex; /* container takes up size of its parent container full width, height adjust auto to highest height of items */
+	/* or */
+	display: inline-flex; /* container takes up size of its content & can be side to another inline-flex */
+}
+
+flex-direction determines the direction of the main axis. row (default), row-reverse, column and column reverse.
+
+flex-basis sets the initial size of the flex-items
+flex-grow how items will expand if extra space in container - 0 = dont grow, 1 = grow equal amounts
+flex-shrink how items will shrink if the isn't enough space in container - 1 = items will shrink, 0 = items will overflow unless wrapped
+
+/* shorthand is recommended */
+flex: grow shrink basis;
+flex: 0 1 100px;
+
+flex-item-top {
+	flex: 0 0 100%;
+}
+flex-item {
+	flex: 1 1 auto;
+}
+
+Aligning items in a flex container
+justify-conten aligns items on the main axis.
+align-items aligns items on the cross axis.
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
 
 
 
