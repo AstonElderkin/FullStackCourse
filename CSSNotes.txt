@@ -798,6 +798,102 @@ align-items aligns items on the cross axis.
 	justify-content: center;
 }
 
+CSS grid
+Gutter is often used to space columns.
+
+grid container - parent element.
+grid items - child elements within the grid container.
+<div class="grid-container">
+	<div class="grid-item">
+		<div>Not a grid item</div>
+	</div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+</div>
+
+.grid-container {
+	display: grid; /*span width of container */
+	/* or */
+	display: inline-grid; /*span width of content */
+}
+
+explicit grid:
+grid-template-columns
+grid-template-rows
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 100px 100px 100px; /*3 columns */
+	grid-template-rows: 100px 100px; /*2 rows */
+}
+
+Fraction unit - fr - represents a fraction of the available space in the grid container
+grid-template-columns: 1fr 1fr 1fr; /* 3 columns all taking up equal space */
+grid-template-columns: 1fr 2fr 1 fr; /* 3 columns, 2nd column taking up double space of the others */
+Same applies to rows.
+
+Can use repeat () for shorthand
+repeat([number of tracks], [size of tracks])
+grid-template-columns: 1fr 1fr 1fr;
+/*same as */
+grid-template-columns: repeat(3, 1fr);
+can mix aswell.
+grid-template-columns: 50px repeat(2, 1fr);
+
+Adding gutters with gap
+gap: 10px; /* rows & columns */
+gap: 10px 20px; /*rows   columns */
+
+/*longhand */
+row-gap: 10px;
+column-gap: 20px;
+
+/*valid */
+gap: 20px;
+gap: 16%;
+gap: calc(10% + 20px)
+
+/*not valid */
+gap: 1fr
+
+Implicit grid - extra content on top of expected grid layout/set in explicit grid - or if number of items unknown
+grid-auto-columns
+grid-auto-rows
+.grid-container {
+	display: grid;
+	grid-auto-columns: repeat(3, 1fr); /*3 columns */
+	grid-auto-rows: 100px 100px; /*2 rows */
+}
+
+grid structure
+.grid-container {
+	display: grid;
+	grid-remplate-columns: 100px repeat(2, 1fr);
+	grid-template-rows:100px;
+	grid-auto-rows: 200px;
+	grid-auto-columns: 50px;
+}
+
+grid-column = 	grid-column-start
+		grid-column-end
+grid-row = 	grid-row-start
+		grid-row-end
+
+.grid-item-1 {
+	/*longhand */
+	grid-column-start: 2;
+	grid-column-end: 4;
+	/*shorthand */
+	grid-column: 2 / 4;
+
+	/*longhand */
+	grid-row-start: 1;
+	grid-row-end: 3;
+	/*shorthand */
+	grid-row: 1 / 3;
+}
+
+
 
 
 
