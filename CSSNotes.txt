@@ -893,9 +893,54 @@ grid-row = 	grid-row-start
 	grid-row: 1 / 3;
 }
 
+Advanced selectors
+chold combinator (>)
+Only matches to direct child element
+/* descendant selector */
+parent child {}
+ancestor descendant {}
 
+/*child combinator */
+parent > child {}
 
+Sibling combinators (adjacent +,general ~)
+<parent>
+	<sibling></sibling>
+	<sibling></sibling>
+</parent>
 
+/*first p directly after h1 */
+h1 + p {
+
+}
+
+/*any p after h1 */
+h1 ~ p {
+
+}
+
+psuedo-class selector: firsty and last
+/*only if is last/first elements, nothing before or after. */
+p:first-child {
+	color: red;
+}
+p:last-child {
+	color: green;
+}
+
+<section>
+	<p>Paragraph.</p><!-- This 1 will display red -->
+	<p>Paragraph.</p>
+	<p>Paragraph.</p><!-- This 1 will display green -->
+</section>
+
+.example p:last-child {
+	color: green;
+}
+
+p:first-of-type {
+	color: green;
+}
 
 
 
