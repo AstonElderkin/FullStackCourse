@@ -942,7 +942,42 @@ p:first-of-type {
 	color: green;
 }
 
+Responsive Web Design (RWD)
+1 - Fluid layout
+2 - Flexible images
+3 - Media queries
 
+background-size may only be included after position, seperated with /
+selector {
+	/* image, repeat style, position, background size */
+	background: url(.../image.jpg) no repeat center/cover;
+}
+/* if not using position, declare size seperately. */
+selector {
+	background: blue url(image.jpg) no repeat;
+	background-size: cover;
+}
+
+media queries
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 16px;
+	}
+}
+
+Media types:
+All - matches to all devices. - @media all {...}
+Print - matches to printers and print-related displays. - @media print {...}
+Speech - matches to screen reading devices that "read out" a page. - @media speech {...}
+Screen - matches all devices that arent categorised as print or speech. - @media screen {...}
+
+Media features - used to test a specific feature of the device.
+@media (width: 480px) {...}
+@media (orientation: landscape) {...}
+
+use and to combine features and types:
+@media screen and (orientation: landscape) {...}
+@media screen and (min-width: 30em) and (orientation: landscape) {...}
 
 
 
