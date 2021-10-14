@@ -2,8 +2,8 @@
 Repository for code notes from LinkedIn Full Stack Developer course 
 Course covers the following topics:
 - HTML - Complete - HTMLNotes.txt,
-- CSS - Currently going through - CSSNotes.txt,
-- JavaScript,
+- CSS - Complete - CSSNotes.txt,
+- JavaScript - Currently Work in Progress - JSNotes.txt,
 - Search techniques for web developers,
 - ECMAscript 6+ (ES6+),
 - Git,
@@ -15,3 +15,4 @@ Course covers the following topics:
 - DevOps.
 
 Practical learning/application done on project files supplied by course, will update & maintain.
+These files are filled with key pieces of code and functionality, they are being uploaded for reference material.
